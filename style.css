@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 60%;
+  font-size: 65%;
   box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: rgb(74, 74, 74);
-  /* background-color: #60b347; */
+  transition: filter 0.3s ease;
 }
 
 /* LAYOUT */
@@ -124,4 +124,71 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+/* Instructions Button */
+.btn--instructions {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  background-color: #ffb545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2000;
+}
+
+.btn--instructions:hover {
+  background-color: #00c46a;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 3000;
+}
+
+.modal-content h2,
+.modal-content p,
+.modal-content ol {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Add margin for readability */
+.modal-content p,
+.modal-content ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-content li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.hidden {
+  display: none;
 }
